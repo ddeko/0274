@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myMapboxMapView"
+        mapbox:access_token="@string/accessToken"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
+
+
+    <com.sa90.materialarcmenu.ArcMenu
+        android:id="@+id/arcMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_scr="@drawable/ic_directions_bus_white_48dp"
+        app:menu_color="#fcb539"
+        app:menu_radius="150dp"
+        app:menu_open="arc_left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/selcetor_circle_button"
+            android:src="@drawable/rute3b"
+            android:scaleType="fitXY"
+            android:id="@+id/rute3b"/>
+
+        <ImageButton
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/selcetor_circle_button"
+            android:src="@drawable/rute3a"
+            android:scaleType="fitXY"
+            android:id="@+id/rute3a"/>
+
+        <ImageButton
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/selcetor_circle_button"
+            android:src="@drawable/rute2b"
+            android:scaleType="fitXY"
+            android:id="@+id/rute2b"/>
+
+        <ImageButton
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/selcetor_circle_button"
+            android:src="@drawable/rute2a"
+            android:scaleType="fitXY"
+            android:id="@+id/rute2a"
+            />
+
+        <ImageButton
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/selcetor_circle_button"
+            android:src="@drawable/rute1b"
+            android:scaleType="fitXY"
+            android:id="@+id/rute1b"/>
+
+        <ImageButton
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/selcetor_circle_button"
+            android:src="@drawable/rute1a"
+            android:scaleType="fitXY"
+            android:id="@+id/rute1a"/>
+
+
+    </com.sa90.materialarcmenu.ArcMenu>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mylocation"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_my_location_black_48dp"
+        app:backgroundTint="#aaffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="12dp" />
+
+    <co.aenterhy.toggleswitch.ToggleSwitchButton
+        android:id="@+id/toggle"
+        style="@style/ToggleSwitchButton"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_above="@+id/mylocation" />
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avloadingIndicatorView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="visible"
+        app:indicator="BallClipRotatePulse"
+        app:indicator_color="#fcc11b"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

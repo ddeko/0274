@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000000</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">#000000</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">#000000</item>
+
+        <item name="android:textColorSecondary">#ffffff</item>
+
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:itemBackground">@color/black</item>
+
+        <item name="material_drawer_background">#bb111111</item>
+        <item name="material_drawer_primary_text">#fcb539</item>
+        <item name="material_drawer_primary_icon">#fcb539</item>
+        <item name="material_drawer_secondary_text">#fcb539</item>
+        <item name="material_drawer_selected">#bb111111</item>
+        <item name="material_drawer_hint_text">#fcb539</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_dark_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_hint_icon</item>
+        <item name="material_drawer_selected_text">#fcb539</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToggleSwitchButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="outerRadius">50dp</item>
+        <item name="handleDrawable">@drawable/ic_switch</item>
+        <item name="upper">@drawable/plus</item>
+        <item name="bottom">@drawable/min</item>
+    </style>
+</resources>
